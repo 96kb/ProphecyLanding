@@ -48,7 +48,7 @@ html {
     padding-top: 80px;
 }
 
-.webcontent {
+#webcontent {
     padding-top: 5px;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
@@ -74,6 +74,12 @@ html {
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
     padding-top: 25px;
+}
+
+.welcome-buttons :hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
 }
 
 .discord {
@@ -107,5 +113,36 @@ html {
 }
 
 .welcome-section {
+    height: 100vh;
+}
+
+.skiptocontent  {
+    background-color: #372b80;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.skipbutton {
+    background-color: #372b80;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    padding-top: 200px;
+
+}
+
+.skipbutton :hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.description-section {
     height: 100vh;
 }
