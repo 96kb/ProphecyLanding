@@ -172,3 +172,12 @@ html {
     color: white;
     transition-duration: 0.3s;
 }
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #372b80;
+    font-size: 20px;
+}
