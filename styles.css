@@ -6,9 +6,10 @@ html {
 .navtop {
     background-color: #222129;
     overflow: hidden;
+    position: relative;
 }
 
-.navtop a {
+.navtop a.notright{
     float: left;
     display: block;
     color: #f2f2f2;
@@ -20,25 +21,64 @@ html {
     width: 40px;
     font-family: 'Titillium Web', sans-serif;
 }
+
+.navtop a.split{
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 40px;
+    width: 40px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
 .navtop :hover {
     color: black;
     background-color: gray;
 }
 
 .navtop a.active {
-    color: black;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 40px;
+    width: 40px;
+    font-family: 'Titillium Web', sans-serif;
     background-color: gray;
 }
 
-.navtop a.split {
-    float: right;
-}
 .navtop img {
     float: left;
     padding: 14px 16px;
     height: 40px;
     width: 40px;
     pointer-events: none;
+}
+
+.navtop-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 17px;
+    height: 40px;
+    width: 225px;
+    font-family: 'Titillium Web', sans-serif;
+    vertical-align: auto;
 }
 
 .webtitle {
@@ -53,7 +93,8 @@ html {
     padding-top: 5px;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
-    color: white
+    color: white;
+    text-align: center;
 }
 
 .webcontent p{
@@ -140,6 +181,7 @@ html {
 
 .description-section {
     height: 100vh;
+    text-align: center;
 }
 
 .scrollbutton  {
@@ -167,9 +209,8 @@ html {
 
 .list {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     font-size: 20px;
     color: white;
+    text-align: left;
+    display: inline-block;
 }
